@@ -1,0 +1,62 @@
+#frmCalculator {
+  width: 50%;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.operation {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 5px;
+}
+
+.opt {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+  cursor: pointer;
+  margin: 2px 5px;
+  border: 2px solid lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+.opt.selected {
+  border: 2px solid black;
+}
+
+sup {
+  padding-bottom: 15px;
+}
+
+.inputs {
+  padding: 10px;
+}
+
+#dvInputParameters {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 5px 0px;
+}
+
+#dvInputParameters input {
+  width: 45%;
+  padding-left: 5px;
+}
+
+.dvResult {
+  padding: 10px;
+}
+
+#result {
+  border: 1px solid black;
+  display: block;
+  height: 25px;
+  padding-left: 5px;
+  padding-top: 4px;
+}

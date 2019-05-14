@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <form id="frmCalculator">
+      <div class="operation">
+        <div class="opt selected" id="Sum" data-value="+">+</div>
+        <div class="opt" id="Rest" data-value="-">-</div>
+        <div class="opt" id="Multiply" data-value="*">x</div>
+        <div class="opt" id="Divide" data-value="/">/</div>
+        <div class="opt" id="Square_root" data-value="sqrt">√</div>
+        <div class="opt" id="Power" data-value="**">x<sup>y</sup></div>
+      </div>
+      <div class="inputs">
+        <label>Inputs</label>
+        <div id="dvInputParameters">
+          <input type="number" id="nbrFirstNum" value="0" />
+          <input type="number" id="nbrSecondNum" value="0" />
+        </div>
+        <button type="submit" id="btnResult">Operate</button>
+      </div>
+      <div class="dvResult">
+        <strong>Result</strong>
+        <output id="result"></output>
+      </div>
+    </form>
+    <script src="calculator.js"></script>
+  </body>
+</html>
