@@ -1,9 +1,6 @@
-var instance;
 var Singleton = function() {
-  if (!instance) {
-    instance = this;
-  }
-  return instance;
+  if (!Singleton.instance) Singleton.instance = this;
+  return Singleton.instance;
 };
 
 //TEST
