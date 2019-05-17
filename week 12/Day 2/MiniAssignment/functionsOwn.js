@@ -4,10 +4,12 @@
 Array.prototype.popOwn = function() {
   var nArr = this.length - 1;
   last_element = this[nArr];
-  delete this[nArr];
   this.length = nArr;
   return last_element;
 };
+
+var a = [1, 4, 5, "asdsa"];
+a.popOwn();
 
 //Every
 //=====================================================
@@ -17,13 +19,10 @@ Array.prototype.everyOwn = function(callback) {
   let con = 0;
   let success = true;
   while (con < nArr) {
-    if (!callback(this[con])) {
-      success = false;
-      break;
-    }
+    if (!callback(this[con])) return false;
     con++;
   }
-  return success;
+  return true;
 };
 
 // a = [undefined, NaN, 5, null];
@@ -41,13 +40,10 @@ Array.prototype.someOwn = function(callback) {
   let con = 0;
   let success = false;
   while (con < nArr) {
-    if (callback(this[con])) {
-      success = true;
-      break;
-    }
+    if (callback(this[con])) return true;
     con++;
   }
-  return success;
+  return false;
 };
 
 // a = [50, 100, 3343, 0];
@@ -63,15 +59,11 @@ Array.prototype.someOwn = function(callback) {
 Array.prototype.findOwn = function(callback) {
   let nArr = this.length;
   let con = 0;
-  let result = undefined;
   while (con < nArr) {
-    if (callback(this[con])) {
-      result = this[con];
-      break;
-    }
+    if (callback(this[con])) return this[con];
     con++;
   }
-  return result;
+  return undefined;
 };
 
 // a = [50, 1001, 3343, 0];
@@ -115,9 +107,9 @@ Array.prototype.forEachOwn = function(callback) {
   }
 };
 
-a = [1, 3, 5];
-console.log(
-  a.forEachOwn(function(element) {
-    console.log(element);
-  })
-);
+// a = [1, 3, 5];
+// console.log(
+//   a.forEachOwn(function(element) {
+//     console.log(element);
+//   })
+// );
