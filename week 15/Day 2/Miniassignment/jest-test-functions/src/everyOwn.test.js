@@ -1,0 +1,1 @@
+import everyOwn from "./everyOwn";
