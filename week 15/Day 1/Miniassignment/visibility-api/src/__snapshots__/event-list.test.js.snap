@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test event list component 1`] = `
+<DocumentFragment>
+  Titulo 1
+  <ul>
+    <li>
+      Sat Jun 15 2019 00:00:00 GMT-0500 (Peru Standard Time), value of event: false
+    </li>
+    <li>
+      Tue Jun 18 2019 00:00:00 GMT-0500 (Peru Standard Time), value of event: false
+    </li>
+    <li>
+      Wed Jun 19 2019 00:00:00 GMT-0500 (Peru Standard Time), value of event: true
+    </li>
+  </ul>
+</DocumentFragment>
+`;

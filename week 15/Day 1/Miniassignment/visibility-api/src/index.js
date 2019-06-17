@@ -4,4 +4,4 @@ import App from "./App";
 
 const $root = document.getElementById("root");
 
-render(<App pattern={"custom-hooks"} />, $root);
+render(<App pattern={"render-props"} />, $root);
